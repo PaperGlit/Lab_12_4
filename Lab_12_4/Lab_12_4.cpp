@@ -39,16 +39,16 @@ void LPrint(Elem* L)
 
 int LCount(Elem* L, Info x)
 {
-    Elem* first = L; int k = 0;
-    if (first->info == x)
-        k++;
-    while (L->link != first)
+    Elem* first = L; int k = 0; //1
+    if (first->info == x)       //2
+        k++;                    //3
+    while (L->link != first)    //4
     {
-        L = L->link;
-        if (L->info == x)
-            k++;
+        L = L->link;            //5
+        if (L->info == x)       //6
+            k++;                //7
     }
-    return k;
+    return k;                   //8
 }
 
 int main()
