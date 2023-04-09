@@ -63,7 +63,7 @@ int main()
         LAdd(L, value);    
     } 
     LPrint(L);
-    cout << "Enter the value of selected elments : ";
+    cout << "Enter the value of selected elements : ";
     cin >> value1;
     cout << "The amount of elements with value of " << value1 << " : " << LCount(L, value1) << endl;
 }
